@@ -6,3 +6,13 @@ Manfaat dari adanya website ini untuk mempermudah setiap orang yang ingin mengir
 
 Target Market
 Sasaran dari pembuatan website ini adalah setiap orang yang akan mengirim paket namun terkendala oleh kesibukan.
+
+Mekanisme Bisnis
+Seorang pelanggan membuat account di web awak.com. setelah membuat account user baru tersebut dapat mengklik bagian kirim paket. Pada bagian kirim paket ini nanti akan muncul halaman baru yang meminta user memasukkan spesifikasi barang, bisa berupa list/dimensi dan massa kalau tidak ada di list, setelah itu dimasukkan juga lokasi pengambilan barang dan nomor telpon pengirim yang bisa dihubungi, alamat penerima dan nomor telpon yang bisa dihubungi penerima juga diharuskan untuk dimasukkan dalam form pengiriman ini. Setelah melengkapi form pengiriman paket maka di halaman berikutnya akan ditampilkan invoice pembayaran yang dapat dibayar lewat credit card/pulsa. User yang telah membayar mendapat bukti pembayaran dan kode verifikasi (melalui SMS). Kalau pengiriman barang telah sampai maka akan diberikan pesan (SMS) ke user yang menyatakan bahwa barang telah sampai.
+
+Tabel Database 
+
+Rencana Halaman Penting dalam Web
+
+
+
