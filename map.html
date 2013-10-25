@@ -1,0 +1,99 @@
+
+<!doctype html>
+<head>
+	<title>Anterin.com</title>
+	<meta name="Description" content="delivery, order, delivery order, Anterin.com, antar, paket, kirim paket"/>
+	<link rel="stylesheet" type="text/css" href="style/960_12.css">
+	<!--<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>-->
+	<style type="text/css">
+      #map-canvas { 
+      	height: 98%; 
+      	width: 99%; 
+      	margin: 4px auto;
+      	border-radius: 10px;
+       }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7qKpuybHDGaPKLaoqQbmAF3-mEGsj9JY&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-7.786062, 110.378721),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+	<div class="container_12">
+		<div id="header" class="grid_12">
+			<div class="clear"></div>
+			<ul class="grid_6">
+				<li class="grid_1 center mostleft"><a href="index.html"><img src="images/iconhome.png" class=
+					"iconHome"/></a>
+				<li class="grid_1 center middle"><a href="#">Feature</a>
+				<li class="grid_1 center"><a href="#">How to Use</a>
+				<li class="grid_1 center middle"><a href="#">Map</a>
+				<li class="grid_1 center middle"><a href="#">Partner</a>
+					<!--<span class="border"></span>-->
+			</ul>
+			<div class="grid_5 right center">
+				<img src="images/LogoWeb.png"/ class="namaWeb">
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="content" class="grid_12">
+			<div id="map-canvas"/>
+			</div>
+		</div>
+		<div id="footer" class="grid_12">
+			<div class="center">
+				<div class="grid_2">
+					<p class="textFooter">Navigation</p>
+					<ul>
+						<li><a href="#">FAQ</a>
+						<li><a href="#">Site Map</a>
+					</ul>
+				</div>
+				<div class="grid_2">
+					<p class="textFooter">Guide</p>
+					<ul>
+						<li><a href="#">FAQ</a>
+						<li><a href="#">Site Map</a>
+					</ul>
+				</div>
+				<div class="grid_2">
+					<p class="textFooter">Find Us</p>
+					<ul>
+						<li><a href="#"><img src="images/logoFB.png" class="findUS tepi"></a>
+						<li><a href="#"><img src="images/logoTw.png" class="findUS"></a>
+						<div class="clear"></div>
+						<li><a href="#"><img src="images/logoG+.png" class="findUS tepi"></a>
+						<li><a href="#"><img src="images/logoBlog.png" class="findUS"></a>
+					</ul>
+				</div>
+				<div class="grid_3">
+					<p class="textFooter">Partner</p>
+					<ul>
+						<li><img src="images/logoJNE.png">
+						<li><img src="images/logoTIKI.png">
+						<li><img src="images/logoPos.jpg">
+						<li><img src="images/logoDHL.png">
+						<li><img src="images/logoBNI.png">
+						<li><img src="images/logoKompas.png">
+					</ul>
+				</div>
+				<div class="grid_3">
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
