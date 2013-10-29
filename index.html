@@ -1,8 +1,10 @@
+
 <!doctype html>
 <head>
 	<title>Anterin.com</title>
 	<meta name="Description" content="delivery, order, delivery order, Anterin.com, antar, paket, kirim paket"/>
 	<link rel="stylesheet" type="text/css" href="style/960_12.css">
+	<script src="jquerry/jquery-2.0.3.min.js"></script>
 	<!--<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
@@ -14,7 +16,7 @@
 					"iconHome"/></a>
 				<li class="grid_1 center middle"><a href="#">Feature</a>
 				<li class="grid_1 center"><a href="#">How to Use</a>
-				<li class="grid_1 center middle"><a href="#">Map</a>
+				<li class="grid_1 center middle"><a href="map.html">Map</a>
 				<li class="grid_1 center middle"><a href="#">Partner</a>
 					<!--<span class="border"></span>-->
 			</ul>
@@ -25,7 +27,71 @@
 		</div>
 		<div id="content" class="grid_12">
 			<div class="grid_12">
-				<div class="grid_8"></div>
+				<script type="text/javascript">
+					$(document).ready(function() {		
+						//Execute the slideShow
+						slideShow();
+					});
+
+					function slideShow() {
+						//Set the opacity of all images to 0
+						$('#slogan a').css({opacity: 0.0});
+						//Get the first image and display it (set it to full opacity)
+						$('#slogan a:first').css({opacity: 1.0});
+						//Call the slogan function to run the slideshow, 6000 = change to next image after 6 seconds
+						setInterval('slogan()',3000);
+					}
+
+					function slogan() {
+						//if no IMGs have the show class, grab the first image
+						var current = ($('#slogan a.show')?  $('#slogan a.show') : $('#slogan a:first'));
+						//Get next image, if it reached the end of the slideshow, rotate it back to the first image
+						var next = ((current.next().length) ? ((current.next().hasClass('caption'))? $('#slogan a:first') :current.next()) : $('#slogan a:first'));		
+						//Set the fade in effect for the next image, show class has higher z-index
+						next.css({opacity: 0.0}).addClass('show').animate({opacity: 1.0}, 3000).show();
+						//Hide the current image
+						current.animate({opacity: 0.0}, 3000).hide().removeClass('show');
+
+					}
+
+				</script>
+
+				<style type="text/css">
+				#slogan {
+					height:390px;
+					width: 630px;
+					//border:1px solid #bbb;
+					-webkit-box-shadow: 0px 0px 5px #bbb;
+					margin:0px auto;
+				}
+				#slogan a {
+					float:left;
+
+				}
+
+				#slogan a img {
+					position: relative;
+					border-radius: 10px;
+				}
+
+				#slogan a.show {
+					z-index:500;
+				}
+
+				</style>
+				<div id="slogan" class="grid_8">
+					<a href="#" >
+						<img src="images/slider/slider2.jpeg" width="630" height="390" />
+					</a>
+
+					<a href="#">
+						<img src="images/slider/slider1.jpg" width="630" height="390" />
+					</a>
+					
+					<a href="#">
+						<img src="images/slider/slider3.jpg" width="630" height="390" />
+					</a>
+				</div>
 				<div class="grid_4">
 					<div>
 						<span>Almost There!</span>
@@ -78,7 +144,7 @@
 					</ul>
 				</div>
 				<div class="grid_3">
-					coba
+					
 				</div>
 			</div>
 			
